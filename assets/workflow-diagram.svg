@@ -1,0 +1,76 @@
+<svg width="900" height="500" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0D1117"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold">How Highlight Workflow Works</text>
+
+  <!-- Step 1: Meeting/Audio -->
+  <rect x="50" y="90" width="160" height="120" rx="16" fill="#238636" opacity="0.2" stroke="#238636" stroke-width="2"/>
+  <text x="130" y="130" text-anchor="middle" fill="#238636" font-size="36">🎙️</text>
+  <text x="130" y="165" text-anchor="middle" fill="white" font-family="system-ui" font-size="14" font-weight="bold">1. Record Meeting</text>
+  <text x="130" y="185" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Highlight captures</text>
+  <text x="130" y="200" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">your conversation</text>
+
+  <!-- Arrow 1 -->
+  <path d="M220 150 L270 150" stroke="#30363D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M260 140 L275 150 L260 160" fill="none" stroke="#30363D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2: Extract Notes -->
+  <rect x="280" y="90" width="160" height="120" rx="16" fill="#6366F1" opacity="0.2" stroke="#6366F1" stroke-width="2"/>
+  <text x="360" y="130" text-anchor="middle" fill="#6366F1" font-size="36">📝</text>
+  <text x="360" y="165" text-anchor="middle" fill="white" font-family="system-ui" font-size="14" font-weight="bold">2. Create Note</text>
+  <text x="360" y="185" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Add to project with</text>
+  <text x="360" y="200" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">date &amp; title</text>
+
+  <!-- Arrow 2 -->
+  <path d="M450 150 L500 150" stroke="#30363D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M490 140 L505 150 L490 160" fill="none" stroke="#30363D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3: Action Points -->
+  <rect x="510" y="90" width="160" height="120" rx="16" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="2"/>
+  <text x="590" y="130" text-anchor="middle" fill="#F59E0B" font-size="36">✅</text>
+  <text x="590" y="165" text-anchor="middle" fill="white" font-family="system-ui" font-size="14" font-weight="bold">3. Extract Actions</text>
+  <text x="590" y="185" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Auto-detect TODOs</text>
+  <text x="590" y="200" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">&amp; action items</text>
+
+  <!-- Arrow 3 -->
+  <path d="M680 150 L730 150" stroke="#30363D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M720 140 L735 150 L720 160" fill="none" stroke="#30363D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 4: Link Notes -->
+  <rect x="740" y="90" width="130" height="120" rx="16" fill="#EC4899" opacity="0.2" stroke="#EC4899" stroke-width="2"/>
+  <text x="805" y="130" text-anchor="middle" fill="#EC4899" font-size="36">🔗</text>
+  <text x="805" y="165" text-anchor="middle" fill="white" font-family="system-ui" font-size="14" font-weight="bold">4. Link Notes</text>
+  <text x="805" y="185" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Obsidian-style</text>
+  <text x="805" y="200" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">[[wikilinks]]</text>
+
+  <!-- Bottom section - outputs -->
+  <text x="450" y="270" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="14">Then take action...</text>
+
+  <!-- Output 1: Calendar -->
+  <rect x="120" y="300" width="180" height="100" rx="16" fill="#1F6FEB" opacity="0.15" stroke="#1F6FEB" stroke-width="2"/>
+  <text x="210" y="345" text-anchor="middle" fill="#58A6FF" font-size="32">📅</text>
+  <text x="210" y="375" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Add to Calendar</text>
+  <text x="210" y="392" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Google &amp; Outlook</text>
+
+  <!-- Output 2: Email -->
+  <rect x="360" y="300" width="180" height="100" rx="16" fill="#A855F7" opacity="0.15" stroke="#A855F7" stroke-width="2"/>
+  <text x="450" y="345" text-anchor="middle" fill="#A855F7" font-size="32">📧</text>
+  <text x="450" y="375" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Send Email</text>
+  <text x="450" y="392" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">Share action points</text>
+
+  <!-- Output 3: Obsidian -->
+  <rect x="600" y="300" width="180" height="100" rx="16" fill="#7C3AED" opacity="0.15" stroke="#7C3AED" stroke-width="2"/>
+  <text x="690" y="345" text-anchor="middle" fill="#7C3AED" font-size="32">🗃️</text>
+  <text x="690" y="375" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Save to Obsidian</text>
+  <text x="690" y="392" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="11">With linked notes</text>
+
+  <!-- Connecting lines to outputs -->
+  <path d="M450 220 L450 250 L210 250 L210 295" stroke="#30363D" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M450 250 L450 295" stroke="#30363D" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M450 250 L690 250 L690 295" stroke="#30363D" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Footer -->
+  <text x="450" y="470" text-anchor="middle" fill="#6366F1" font-family="system-ui" font-size="12">Built with ❤️ for Highlight AI</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#0D1117"/>
+
+  <!-- Feature Cards Row 1 -->
+  <!-- Card 1: Notes -->
+  <rect x="30" y="30" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="115" cy="75" r="28" fill="#238636" opacity="0.2"/>
+  <text x="115" y="85" text-anchor="middle" font-size="28">📝</text>
+  <text x="115" y="120" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Smart Notes</text>
+  <text x="115" y="140" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Multi-project</text>
+  <text x="115" y="155" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">organization</text>
+  <text x="115" y="175" text-anchor="middle" fill="#238636" font-family="system-ui" font-size="9">✓ Markdown</text>
+
+  <!-- Card 2: Actions -->
+  <rect x="220" y="30" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="305" cy="75" r="28" fill="#F59E0B" opacity="0.2"/>
+  <text x="305" y="85" text-anchor="middle" font-size="28">✅</text>
+  <text x="305" y="120" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Action Points</text>
+  <text x="305" y="140" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Auto-extract from</text>
+  <text x="305" y="155" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">meeting notes</text>
+  <text x="305" y="175" text-anchor="middle" fill="#F59E0B" font-family="system-ui" font-size="9">✓ Priority levels</text>
+
+  <!-- Card 3: Linking -->
+  <rect x="410" y="30" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="495" cy="75" r="28" fill="#EC4899" opacity="0.2"/>
+  <text x="495" y="85" text-anchor="middle" font-size="28">🔗</text>
+  <text x="495" y="120" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Note Linking</text>
+  <text x="495" y="140" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Obsidian-style</text>
+  <text x="495" y="155" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">[[wikilinks]]</text>
+  <text x="495" y="175" text-anchor="middle" fill="#EC4899" font-family="system-ui" font-size="9">✓ Auto-discovery</text>
+
+  <!-- Card 4: Calendar -->
+  <rect x="600" y="30" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="685" cy="75" r="28" fill="#1F6FEB" opacity="0.2"/>
+  <text x="685" y="85" text-anchor="middle" font-size="28">📅</text>
+  <text x="685" y="120" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Calendar Sync</text>
+  <text x="685" y="140" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Google Calendar</text>
+  <text x="685" y="155" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">&amp; Outlook</text>
+  <text x="685" y="175" text-anchor="middle" fill="#1F6FEB" font-family="system-ui" font-size="9">✓ Bulk schedule</text>
+
+  <!-- Feature Cards Row 2 -->
+  <!-- Card 5: Email -->
+  <rect x="125" y="210" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="210" cy="255" r="28" fill="#A855F7" opacity="0.2"/>
+  <text x="210" y="265" text-anchor="middle" font-size="28">📧</text>
+  <text x="210" y="300" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Email Actions</text>
+  <text x="210" y="320" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Draft, Gmail</text>
+  <text x="210" y="335" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">&amp; Outlook API</text>
+  <text x="210" y="355" text-anchor="middle" fill="#A855F7" font-family="system-ui" font-size="9">✓ Share summaries</text>
+
+  <!-- Card 6: Storage -->
+  <rect x="315" y="210" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="400" cy="255" r="28" fill="#7C3AED" opacity="0.2"/>
+  <text x="400" y="265" text-anchor="middle" font-size="28">🗃️</text>
+  <text x="400" y="300" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Flexible Storage</text>
+  <text x="400" y="320" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Obsidian, Local</text>
+  <text x="400" y="335" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">&amp; Notion</text>
+  <text x="400" y="355" text-anchor="middle" fill="#7C3AED" font-family="system-ui" font-size="9">✓ All Markdown</text>
+
+  <!-- Card 7: CLI -->
+  <rect x="505" y="210" width="170" height="160" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="590" cy="255" r="28" fill="#10B981" opacity="0.2"/>
+  <text x="590" y="265" text-anchor="middle" font-size="28">⌨️</text>
+  <text x="590" y="300" text-anchor="middle" fill="white" font-family="system-ui" font-size="13" font-weight="bold">Powerful CLI</text>
+  <text x="590" y="320" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">Full control from</text>
+  <text x="590" y="335" text-anchor="middle" fill="#8B949E" font-family="system-ui" font-size="10">your terminal</text>
+  <text x="590" y="355" text-anchor="middle" fill="#10B981" font-family="system-ui" font-size="9">✓ 30+ commands</text>
+</svg>
