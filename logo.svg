@@ -1,0 +1,49 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" rx="80" fill="url(#gradient)"/>
+
+  <!-- Note/Document shape -->
+  <rect x="100" y="80" width="140" height="180" rx="12" fill="white" opacity="0.95"/>
+  <rect x="120" y="120" width="80" height="8" rx="4" fill="#6366F1" opacity="0.6"/>
+  <rect x="120" y="140" width="100" height="8" rx="4" fill="#6366F1" opacity="0.4"/>
+  <rect x="120" y="160" width="60" height="8" rx="4" fill="#6366F1" opacity="0.4"/>
+  <rect x="120" y="190" width="90" height="8" rx="4" fill="#6366F1" opacity="0.3"/>
+  <rect x="120" y="210" width="70" height="8" rx="4" fill="#6366F1" opacity="0.3"/>
+
+  <!-- Second note (linked) -->
+  <rect x="180" y="140" width="120" height="160" rx="12" fill="white" opacity="0.9" transform="rotate(8 240 220)"/>
+  <rect x="195" y="175" width="70" height="6" rx="3" fill="#8B5CF6" opacity="0.5" transform="rotate(8 230 178)"/>
+  <rect x="195" y="190" width="85" height="6" rx="3" fill="#8B5CF6" opacity="0.35" transform="rotate(8 237 193)"/>
+  <rect x="195" y="205" width="50" height="6" rx="3" fill="#8B5CF6" opacity="0.35" transform="rotate(8 220 208)"/>
+
+  <!-- Connection/Link lines -->
+  <path d="M240 200 Q280 180 300 220" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <circle cx="240" cy="200" r="6" fill="white"/>
+  <circle cx="300" cy="220" r="6" fill="white"/>
+
+  <!-- Highlight marker effect -->
+  <rect x="115" y="116" width="90" height="16" rx="4" fill="#FBBF24" opacity="0.5"/>
+
+  <!-- Action point checkmark -->
+  <circle cx="108" cy="192" r="10" fill="#10B981" opacity="0.9"/>
+  <path d="M103 192 L107 196 L114 188" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Calendar icon hint -->
+  <rect x="280" y="290" width="50" height="45" rx="8" fill="white" opacity="0.85"/>
+  <rect x="280" y="290" width="50" height="14" rx="8" fill="#EC4899" opacity="0.8"/>
+  <circle cx="293" cy="315" r="4" fill="#6366F1" opacity="0.6"/>
+  <circle cx="305" cy="315" r="4" fill="#6366F1" opacity="0.6"/>
+  <circle cx="317" cy="315" r="4" fill="#6366F1" opacity="0.4"/>
+
+  <!-- Email icon hint -->
+  <rect x="70" y="295" width="50" height="36" rx="6" fill="white" opacity="0.85"/>
+  <path d="M75 300 L95 315 L115 300" stroke="#6366F1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+</svg>
