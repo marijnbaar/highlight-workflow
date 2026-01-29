@@ -7,6 +7,7 @@ import {
   ListToolsRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 
+import { z } from 'zod';
 import { noteToolSchemas, noteToolHandlers } from './tools/noteTools.js';
 import { calendarToolSchemas, calendarToolHandlers } from './tools/calendarTools.js';
 import { emailToolSchemas, emailToolHandlers } from './tools/emailTools.js';
@@ -155,21 +156,69 @@ const allTools = {
   },
 };
 
+// Convert Zod schema to JSON Schema
+function zodToJsonSchema(zodSchema: z.ZodObject<z.ZodRawShape>): Record<string, unknown> {
+  const shape = zodSchema.shape;
+  const properties: Record<string, unknown> = {};
+  const required: string[] = [];
+
+  for (const [key, value] of Object.entries(shape)) {
+    const zodType = value as z.ZodTypeAny;
+    let propSchema: Record<string, unknown> = {};
+
+    // Get the inner type if optional
+    let innerType = zodType;
+    let isOptional = false;
+    if (zodType instanceof z.ZodOptional) {
+      isOptional = true;
+      innerType = zodType._def.innerType;
+    }
+    if (zodType instanceof z.ZodDefault) {
+      isOptional = true;
+      innerType = zodType._def.innerType;
+    }
+
+    // Determine the type
+    if (innerType instanceof z.ZodString) {
+      propSchema = { type: 'string' };
+    } else if (innerType instanceof z.ZodNumber) {
+      propSchema = { type: 'number' };
+    } else if (innerType instanceof z.ZodBoolean) {
+      propSchema = { type: 'boolean' };
+    } else if (innerType instanceof z.ZodArray) {
+      propSchema = { type: 'array', items: { type: 'string' } };
+    } else if (innerType instanceof z.ZodEnum) {
+      propSchema = { type: 'string', enum: innerType._def.values };
+    } else {
+      propSchema = { type: 'string' };
+    }
+
+    // Add description
+    if (zodType.description) {
+      propSchema.description = zodType.description;
+    }
+
+    properties[key] = propSchema;
+
+    if (!isOptional) {
+      required.push(key);
+    }
+  }
+
+  return {
+    type: 'object',
+    properties,
+    ...(required.length > 0 ? { required } : {}),
+  };
+}
+
 // Handle list tools request
 server.setRequestHandler(ListToolsRequestSchema, async () => {
   return {
     tools: Object.entries(allTools).map(([name, tool]) => ({
       name,
       description: tool.description,
-      inputSchema: {
-        type: 'object',
-        properties: Object.fromEntries(
-          Object.entries(tool.schema.shape).map(([key, value]) => [
-            key,
-            { type: 'string', description: (value as { description?: string }).description },
-          ])
-        ),
-      },
+      inputSchema: zodToJsonSchema(tool.schema as z.ZodObject<z.ZodRawShape>),
     })),
   };
 });
@@ -213,7 +262,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('Highlight Workflow MCP Server running on stdio');
 }
 
-main().catch(console.error);
+main().catch(() => process.exit(1));

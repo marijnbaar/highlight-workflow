@@ -5,7 +5,8 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "highlight-workflow": "./dist/cli.js"
+    "highlight-workflow": "./dist/cli.js",
+    "highlight-workflow-mcp": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
