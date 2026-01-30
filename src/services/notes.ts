@@ -37,11 +37,11 @@ function noteToMarkdown(note: Note): string {
     title: note.title,
     date: note.date,
     project: note.project,
-    tags: note.tags,
-    linkedNotes: note.linkedNotes,
+    tags: note.tags || [],
+    linkedNotes: note.linkedNotes || [],
     createdAt: note.createdAt,
     updatedAt: note.updatedAt,
-    actionPoints: note.actionPoints,
+    actionPoints: note.actionPoints || [],
   };
 
   return matter.stringify(note.content, frontmatter);
@@ -193,10 +193,15 @@ export function addActionPoint(
     return null;
   }
 
+  // Clean undefined values to avoid YAML serialization issues
   const newActionPoint: ActionPoint = {
-    ...actionPoint,
     id: generateId(),
     noteId,
+    description: actionPoint.description,
+    priority: actionPoint.priority,
+    status: actionPoint.status,
+    ...(actionPoint.assignee ? { assignee: actionPoint.assignee } : {}),
+    ...(actionPoint.dueDate ? { dueDate: actionPoint.dueDate } : {}),
   };
 
   note.actionPoints.push(newActionPoint);
